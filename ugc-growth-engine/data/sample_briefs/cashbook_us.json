@@ -1,0 +1,47 @@
+{
+  "app_id": "cashbook_us",
+  "app_name": "Cash Calculator",
+  "category": "Business / Finance tools",
+  "one_liner": "Track daily cash in and out, keep separate ledgers, and get clean PDF or Excel reports. All offline.",
+  "description": "Cash Calculator is an offline-first cash management app for small business owners, shopkeepers, freelancers and household budget managers. Log cash in and cash out in seconds with notes, categories and photo receipts, keep separate accounts (shop, personal, household, side business), count closing cash with a denomination calculator, and export daily, weekly or monthly PDF or Excel reports. Records stay on the device, with fingerprint or PIN lock, and can be backed up to Google Drive. Works with 150+ currencies.",
+  "key_features": [
+    "Cash in / cash out logged in under 5 seconds",
+    "Multiple accounts: shop, personal, household, side business",
+    "Denomination calculator to count closing cash",
+    "PDF and Excel reports (daily, weekly, monthly)",
+    "100% offline, with fingerprint or PIN lock",
+    "Calendar and search views, Google Drive backup"
+  ],
+  "usp": "A simple, private, offline cash ledger with a denomination counter and clean reports, no signup and no internet needed.",
+  "target_audience": "Small business owners, market and food-truck vendors, tradespeople, freelancers and households that handle cash in the US, UK, Canada and Australia",
+  "city_tiers": [
+    "1"
+  ],
+  "languages": [
+    "en"
+  ],
+  "brand_tone": "practical, friendly, no-nonsense",
+  "cta": "Download free on Google Play",
+  "play_store_id": "com.appfactory.cashcalculator",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.appfactory.cashcalculator",
+  "claims_to_avoid": [
+    "tax filing or tax advice",
+    "bank-grade security",
+    "guaranteed accuracy",
+    "replaces an accountant",
+    "specific time or money saved"
+  ],
+  "research_focus": [
+    "how small businesses, market and food-truck vendors, tradespeople, freelancers and households actually use a cash book / cash ledger app day to day",
+    "end-of-day routine: counting the till, logging cash in and cash out, closing the drawer",
+    "keeping business cash separate from personal and household cash",
+    "frustrations with paper cash books, notebooks and spreadsheets, and why people switch to an app",
+    "how to use a cash book app, simple bookkeeping for cash businesses"
+  ],
+  "mode_mix": {
+    "character": 4,
+    "faceless": 2,
+    "images_vo": 2
+  },
+  "languages_strict": true
+}

@@ -1,0 +1,10 @@
+.venv
+.env
+cache
+outputs
+__pycache__
+remotion/node_modules
+engine.db-shm
+engine.db-wal
+*.pyc
+tests

@@ -1,0 +1,24 @@
+[server]
+# Hot-reloading engine modules re-declares the SQLModel tables and crashes; restart the server after code edits.
+fileWatcherType = "none"
+headless = true
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#7C5CFF"
+backgroundColor = "#0B0D12"
+secondaryBackgroundColor = "#151923"
+textColor = "#E7E9EF"
+borderColor = "#252A37"
+showWidgetBorder = true
+baseRadius = "10px"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+headingFontWeights = [800, 700, 700, 600, 600, 600]
+
+[theme.sidebar]
+backgroundColor = "#0F121A"
+secondaryBackgroundColor = "#151923"
+borderColor = "#1E2330"

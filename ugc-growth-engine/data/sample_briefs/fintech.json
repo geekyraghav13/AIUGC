@@ -1,0 +1,36 @@
+{
+  "app_id": "paisapal",
+  "app_name": "PaisaPal",
+  "category": "Finance",
+  "one_liner": "Track every UPI payment and stay within your monthly budget automatically.",
+  "description": "PaisaPal reads your UPI and bank SMS (on-device) and auto-categorises spends into food, travel, rent, shopping and bills. Set a monthly budget and get a gentle nudge before you overspend. Split bills with roommates and settle via UPI. Works in English, Hindi and Tamil.",
+  "key_features": [
+    "Auto-categorised UPI spends from SMS (processed on-device)",
+    "Monthly budget with overspend nudges",
+    "Split bills with friends and roommates, settle via UPI",
+    "Salary-day planner that suggests how much to set aside",
+    "Available in English, Hindi and Tamil"
+  ],
+  "usp": "Zero manual entry expense tracking built for UPI-first India.",
+  "target_audience": "18-30 year old students and young professionals in metro and tier-2 cities who pay mostly by UPI",
+  "city_tiers": [
+    "1",
+    "2",
+    "3"
+  ],
+  "languages": [
+    "en"
+  ],
+  "brand_tone": "desi-casual",
+  "cta": "Download free on Play Store",
+  "play_store_id": "com.example.paisapal",
+  "play_store_url": "",
+  "claims_to_avoid": [
+    "guaranteed savings",
+    "specific rupee amounts saved",
+    "investment returns",
+    "credit score improvement",
+    "loans"
+  ],
+  "languages_strict": true
+}

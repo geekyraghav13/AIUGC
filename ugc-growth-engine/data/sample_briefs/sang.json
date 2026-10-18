@@ -1,0 +1,39 @@
+{
+  "app_id": "sang",
+  "app_name": "Sang: Digital Business Card",
+  "category": "Productivity / Business Networking",
+  "one_liner": "Replace paper business cards with a digital card and QR profile you share in one scan.",
+  "description": "Sang is a digital business card maker and QR profile sharing app. Build your professional profile once, generate a personal QR business card, and share phone, email, LinkedIn, Instagram and portfolio in one scan. Tag contacts by event, scan physical cards to digitise them, control exactly what each person sees, and use it offline.",
+  "key_features": [
+    "Digital business card with custom branding",
+    "QR code business card for instant contact exchange",
+    "Auto-tag and organise contacts met at events",
+    "Card scanner to digitise physical business cards",
+    "Portfolio sharing for creators and freelancers",
+    "Privacy controls for every shared profile",
+    "Offline-ready, available anytime"
+  ],
+  "usp": "One scan shares your whole professional profile, so you never hand out or lose a paper card again.",
+  "target_audience": "Indian professionals, founders, freelancers, creators, students and sales teams who attend events, expos, college fests and client meetings and want a fast, modern way to exchange contacts",
+  "city_tiers": ["1", "2"],
+  "languages": ["en", "hi"],
+  "brand_tone": "trustworthy",
+  "cta": "Download free on Google Play",
+  "play_store_id": "com.sang.business.app",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.sang.business.app&hl=en_IN",
+  "claims_to_avoid": [
+    "guaranteed clients or jobs",
+    "get more business",
+    "best networking app",
+    "comparison with named competitors",
+    "invented statistics"
+  ],
+  "research_focus": [
+    "digital business card and QR code visiting card for Indian professionals",
+    "networking at events, expos, conferences and college fests in India",
+    "paper visiting cards getting lost or forgotten and saving contacts quickly",
+    "freelancers and creators sharing portfolio and social links in one link"
+  ],
+  "mode_mix": {"faceless": 10},
+  "languages_strict": true
+}

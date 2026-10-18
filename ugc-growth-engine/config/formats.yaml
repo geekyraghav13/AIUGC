@@ -1,0 +1,38 @@
+# UGC formats. `structure` is the beat sheet the script prompt follows. `modes`: visual modes that suit the format,
+# best first (used for the mode mix only when there is no market research yet).
+pov:
+  label: "POV"
+  structure: ["POV: <relatable situation> (hook on screen)", "the moment it goes wrong", "discovering the app", "how it feels now", "CTA"]
+  modes: [character, ai_character, images_vo]
+problem_solution:
+  label: "Problem → Solution"
+  structure: ["state the pain bluntly", "why it keeps happening", "the app as the fix", "show 1-2 features", "CTA"]
+  modes: [faceless, images_vo, ai_character]
+three_reasons:
+  label: "3 reasons"
+  structure: ["3 reasons you need <x> (hook)", "reason 1", "reason 2", "reason 3", "CTA"]
+  modes: [images_vo, faceless, ai_character]
+before_after:
+  label: "Before / After"
+  structure: ["before: the messy way", "the turning point", "after: with the app", "the key feature that made the difference", "CTA"]
+  modes: [images_vo, character, faceless]
+nobody_tells_you:
+  label: "Nobody tells you"
+  structure: ["nobody tells you this about <topic> (hook)", "the hidden problem", "the simple fix", "how the app helps", "CTA"]
+  modes: [ai_character, faceless, images_vo]
+old_way_vs_new_way:
+  label: "Old way vs new way"
+  structure: ["old way (hook)", "why the old way hurts", "new way with the app", "side by side benefit", "CTA"]
+  modes: [images_vo, faceless, character]
+myth_vs_fact:
+  label: "Myth vs Fact"
+  structure: ["common myth (hook)", "why people believe it", "the fact", "how the app fits", "CTA"]
+  modes: [ai_character, images_vo, faceless]
+day_in_life:
+  label: "Day in the life"
+  structure: ["morning moment (hook)", "midday problem", "app saves the moment", "evening payoff", "CTA"]
+  modes: [character, images_vo, ai_character]
+reaction_to_problem:
+  label: "Reaction to problem"
+  structure: ["dramatic reaction to a relatable problem (hook)", "what caused it", "the fix", "calm after", "CTA"]
+  modes: [ai_character, character, images_vo]

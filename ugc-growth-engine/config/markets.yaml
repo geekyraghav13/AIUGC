@@ -1,0 +1,36 @@
+# Market profiles. The DEFAULT market is TIER1 (United States + UK, Canada, Australia, English). To run India instead for one process:
+#   ENGINE_MARKET=IN .venv/bin/python cli.py go cashcalc
+default: TIER1
+
+IN:
+  name: India
+  regions: [IN]            # YouTube regionCode (round-robin across keywords)
+  trends_geo: IN
+  trends_hl: en-IN
+  autocomplete_gl: IN
+  context_file: india_context
+  locale: "in India"
+  person: "Indian"
+  money: "Indian rupee notes"
+  background: "simple everyday Indian background"
+  override: ""             # no override: the prompts are already written for India
+TIER1:
+  name: Tier-1 markets (United States, United Kingdom, Canada, Australia)
+  regions: [US, GB, CA, AU]
+  trends_geo: US
+  trends_hl: en-US
+  autocomplete_gl: US
+  context_file: context_tier1
+  locale: "in the United States, United Kingdom, Canada or Australia"
+  person: "everyday"
+  money: "US dollar bills"
+  background: "simple everyday small-business or home background in the US/UK/Canada/Australia"
+  override: |
+    ## MARKET OVERRIDE (applies to everything above; it wins over any India-specific instruction)
+    The target audience lives in tier-1 English-speaking countries: the United States, United Kingdom, Canada and Australia. Ignore every
+    instruction above that mentions India, Indian cities, Hinglish, Hindi, rupees, UPI, kirana, WhatsApp-family or Indian festivals/slang.
+    Instead: write natural, casual English that a creator in those countries would actually say; currency is the US dollar ($); use their
+    everyday settings (small shops and markets, food trucks, barbershops, home offices, farmers' markets, weekend side-hustles, garages, salons,
+    coffee shops, tradespeople); people, places and stock-footage descriptions must look like US/UK/Canada/Australia (never Indian settings, notes
+    or clothing). Spelling may be US English. Everything spoken and every on-screen word is English in Roman script. Scene `query_en` for stock
+    footage must describe those settings (for example "small business owner counting cash at a shop counter").

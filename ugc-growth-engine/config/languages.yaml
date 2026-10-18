@@ -1,0 +1,83 @@
+# language code -> voices, font, script, style notes.
+# Add a language by adding a block here (voices must exist in `edge-tts --list-voices`).
+hinglish:
+  name: Hinglish
+  script: latin
+  voices: {female: hi-IN-SwaraNeural, male: hi-IN-MadhurNeural}
+  gtts_lang: hi
+  font: "Noto Sans"
+  font_file: NotoSans-Bold.ttf
+  style_notes: >-
+    Roman script only (no Devanagari). Natural Gen-Z WhatsApp/Instagram texting tone mixing Hindi and English
+    ("yaar", "scene kya hai", "literally", "bro"). Metro + tier-2 references (Delhi metro, Bangalore traffic,
+    Indore poha, Lucknow chai). English tech and brand words stay English.
+  regions: [Delhi NCR, Mumbai, Bengaluru, Pune, Indore, Jaipur, Lucknow]
+hi:
+  name: Hindi
+  script: devanagari
+  voices: {female: hi-IN-SwaraNeural, male: hi-IN-MadhurNeural}
+  gtts_lang: hi
+  font: "Noto Sans Devanagari"
+  font_file: NotoSansDevanagari-Bold.ttf
+  style_notes: >-
+    Simple spoken Hindi in Devanagari (bolchaal ki Hindi, not shuddh). Hindi-belt tier-2/3 scenarios
+    (Kanpur, Patna, Varanasi, Bhopal, kirana store, family WhatsApp group). English tech words like
+    "app", "UPI", "download" may stay in English (written in Latin or Devanagari).
+  regions: [Uttar Pradesh, Bihar, Madhya Pradesh, Rajasthan, Haryana]
+ta:
+  name: Tamil
+  script: tamil
+  voices: {female: ta-IN-PallaviNeural, male: ta-IN-ValluvarNeural}
+  gtts_lang: ta
+  font: "Noto Sans Tamil"
+  font_file: NotoSansTamil-Bold.ttf
+  style_notes: >-
+    Spoken Tamil (Chennai/Kongu colloquial, not literary) in Tamil script. Tamil Nadu references
+    (Chennai local train, filter coffee, Coimbatore, Madurai, Pongal, T. Nagar shopping).
+    Avoid Hindi-belt idioms. English tech words may stay English.
+  regions: [Chennai, Coimbatore, Madurai, Trichy]
+te:
+  name: Telugu
+  script: telugu
+  voices: {female: te-IN-ShrutiNeural, male: te-IN-MohanNeural}
+  gtts_lang: te
+  font: "Noto Sans Telugu"
+  font_file: NotoSansTelugu-Bold.ttf
+  style_notes: >-
+    Spoken Telugu in Telugu script. AP/Telangana references (Hyderabad Hi-Tech City, Vijayawada,
+    Vizag, biryani, Sankranti, Ameerpet coaching). English tech words may stay English.
+  regions: [Hyderabad, Vijayawada, Visakhapatnam, Warangal]
+mr:
+  name: Marathi
+  script: devanagari
+  voices: {female: mr-IN-AarohiNeural, male: mr-IN-ManoharNeural}
+  gtts_lang: mr
+  font: "Noto Sans Devanagari"
+  font_file: NotoSansDevanagari-Bold.ttf
+  style_notes: >-
+    Spoken Marathi in Devanagari. Maharashtra references (Pune, Nagpur, Nashik, Mumbai local,
+    vada pav, Ganeshotsav, Kolhapur). English tech words may stay English.
+  regions: [Pune, Mumbai, Nagpur, Nashik, Kolhapur]
+bn:
+  name: Bengali
+  script: bengali
+  voices: {female: bn-IN-TanishaaNeural, male: bn-IN-BashkarNeural}
+  gtts_lang: bn
+  font: "Noto Sans Bengali"
+  font_file: NotoSansBengali-Bold.ttf
+  style_notes: >-
+    Spoken Bengali (Kolkata colloquial) in Bengali script. West Bengal references (Kolkata metro,
+    College Street, adda, Durga Puja, fish market, Siliguri). English tech words may stay English.
+  regions: [Kolkata, Howrah, Siliguri, Durgapur]
+en:
+  name: English
+  script: latin
+  voices: {female: en-US-AriaNeural, male: en-US-GuyNeural}
+  gtts_lang: en
+  font: "Noto Sans"
+  font_file: NotoSans-Bold.ttf
+  style_notes: >-
+    Natural, casual creator English as spoken by real people in the US, UK, Canada and Australia: contractions, short sentences,
+    light humour, no corporate language, no slang that only one country uses. Everyday settings: small shops, food trucks, barbershops,
+    home offices, farmers markets, garages. Currency in dollars ($).
+  regions: [New York, Austin, Chicago, Toronto, London, Manchester, Sydney, Melbourne]

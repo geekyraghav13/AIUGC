@@ -1,0 +1,31 @@
+# D8 market research. Every key can be overridden with an env var RESEARCH_<KEY> (upper-case).
+days_back: 180
+min_views: 3000
+max_duration_s: 180
+results_per_keyword: 25
+top_keywords: 20
+seeds_per_language: 30          # LLM-generated problem-style seed queries per target language
+analyze_n: 25
+max_per_channel: 2
+baseline_sample: 30
+market_prior_strength: 5        # pseudo-observations given to market patterns in the optimizer
+proven_concept_share: 0.6       # share of Gen 1 concepts that must build on a proven pattern
+refresh_days: 7
+# Niche apps: when fewer than `min_relevant` Shorts are relevant, widen automatically — any topic term counts,
+# lower view floor, longer window. Gemini's per-video relevance check still filters the analysed set.
+min_relevant: 10
+widen_min_views: 1000
+widen_days_back: 365
+min_research_videos: 8          # below this many analysed videos, the video-mode mix uses format fit instead
+stale_days: 30                  # YouTube API data older than this is purged (YouTube API Services policy)
+min_pattern_videos: 3           # a value needs this many videos to be a "pattern", else "weak signal"
+autocomplete_interval_s: 1.0
+gemini_interval_s: 7.0
+copy_overlap_threshold: 0.6     # compliance: token overlap with a stored market hook
+
+# Instagram Reels via Apify (paid per result; only used when APIFY_API_TOKEN is set)
+instagram_hashtags: 12             # hashtags searched per run
+instagram_results_per_hashtag: 20  # ≈ $0.0026 per result on the Apify FREE tier
+instagram_baseline_creators: 15    # creators whose recent Reels form the baseline
+instagram_baseline_reels: 12
+instagram_analyze_n: 15            # Reels analysed (caption + hashtags, + transcript if APIFY_TRANSCRIPTS=1)

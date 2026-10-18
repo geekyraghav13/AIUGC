@@ -1,0 +1,34 @@
+{
+  "app_id": "padhoplus",
+  "app_name": "PadhoPlus",
+  "category": "Education",
+  "one_liner": "Bite-size daily practice for board exams and spoken English, in your own language.",
+  "description": "PadhoPlus gives students 10-minute daily practice sets for Class 10/12 boards and a spoken-English coach for job interviews. Questions explained in Hindi, Tamil, Telugu, Marathi and Bengali. Doubt-solving by photo, streaks and weekly mock tests. Works on low data.",
+  "key_features": [
+    "10-minute daily practice sets for Class 10 and 12 boards",
+    "Photo doubt-solving with step-by-step explanations",
+    "Spoken-English interview coach with instant feedback",
+    "Explanations in Hindi, Tamil, Telugu, Marathi and Bengali",
+    "Weekly mock tests and streaks; works on 2G/low data"
+  ],
+  "usp": "Exam and English practice explained in your mother tongue, in 10 minutes a day.",
+  "target_audience": "Class 9-12 students and fresh graduates in tier-2 and tier-3 cities, and their parents",
+  "city_tiers": [
+    "2",
+    "3"
+  ],
+  "languages": [
+    "en"
+  ],
+  "brand_tone": "trustworthy",
+  "cta": "Download free on Play Store",
+  "play_store_id": "com.example.padhoplus",
+  "play_store_url": "",
+  "claims_to_avoid": [
+    "guaranteed marks or ranks",
+    "guaranteed job",
+    "percentages of students who passed",
+    "comparison with named coaching institutes"
+  ],
+  "languages_strict": true
+}

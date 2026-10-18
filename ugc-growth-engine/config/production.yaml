@@ -1,0 +1,60 @@
+# Production crew: Owner → Director → (Magnific assets) → Editor → Reviewers (text, visual, audio, brand) → QC → Owner.
+# Credit costs were measured with Magnific `simulate_cost` on 2026-09-29 (Premium plan, 20,000 credits/month).
+
+max_revision_rounds: 2          # editor re-cuts after QC before the video goes to the owner anyway (with open issues)
+qc_pass_score: 80               # 0–100; QC passes when no blocker/major issue is open AND score ≥ this
+owner_auto_approve: false       # true = QC pass counts as owner approval (batch mode); default: a human approves
+
+# Magnific (called through the MCP by the assistant; the engine writes job sheets and imports the results)
+magnific:
+  # COST POLICY (set 2026-09-30 after two overspends): everything paid is OFF by default. Videos are made from free
+  # stock, the app's real screenshots and free edge-tts voices (₹0). To buy something, the owner approves an exact job
+  # list + credit total for that batch, then raises the matching switch/cap below for that run only, and sets it back.
+  monthly_credit_cap: 600       # engine-wide monthly ceiling for ALL apps (plan is 20,000; this is deliberately tiny)
+  per_video_credit_cap: 60      # default cap (used when a creative has no visual mode)
+  allow_paid_revisions: false   # QC/editor fix rounds may NOT order new paid assets (voice re-records, AI stills, clips)
+  # Per visual mode: typical spend (plans the mix against the budget) and the hard cap per video. Measured 2026-09-29.
+  modes:
+    faceless:     {estimate: 0, cap: 0}        # free voice + stock + screenshots (was 100 / 120 with premium voice)
+    images_vo:    {estimate: 0, cap: 0}        # free stock photos (was 250 / 350 with AI stills)
+    character:    {estimate: 0, cap: 0}        # OFF: persona images/clips cost ~450 (was 450 / 550). 2026-10-06 run used 50/50 for 4 UGC videos = 200 credits
+    ai_character: {estimate: 0, cap: 0}        # OFF: talking heads cost ~1,400 (was 1400 / 1600)
+  voice:
+    enabled: false              # OFF: free edge-tts voice. true = premium ElevenLabs voice at ~18 credits per line (~110 per video)
+    model: eleven_v3
+    credits_per_line: 18        # measured: one Hindi line, eleven_v3
+    stability: 0.45             # lower = more expressive
+    speed: 1.05
+    # Casting: Magnific (ElevenLabs) catalog voice ids by language → creator-style gender → [creator, calm explainer].
+    # Picked from `audio_voices_list` on 2026-09-29 for natural social-media delivery. Languages not listed
+    # (te, mr, bn: no native voice in the catalog yet) keep the free edge-tts voice.
+    cast:
+      hi:       {female: [1002, 1001], male: [808, 1126]}   # Anjali Bhardwaj (vlog), Shreya Malhotra · Saurabh Sharma, Kabir Sethi
+      hinglish: {female: [1002, 1001], male: [808, 1126]}
+      ta:       {female: [659, 1053], male: [1084, 661]}    # Swetha Devi, Divya Sundaram · Suresh Sundaram, Naveen Arulmozhi
+    calm_styles: [explainer_didi_bhaiya, storytime]        # these use the second (calmer) voice in each list
+  hook_clip:
+    enabled: false              # AI b-roll for the hook scene, only when stock footage is weak
+    slug: kling-25
+    duration: 5
+    resolution: 1080p
+    credits: 325                # measured
+  # Stock first: a scene that stock can cover uses a free Pexels photo/video when its description covers at least
+  # this share of the scene's content words; below it the scene is ordered from Magnific (AI photo).
+  stock_match_threshold: 0.6
+  scene_image:
+    enabled: false              # when stock footage fails the same scene twice, the crew orders an AI photo instead
+    mode: seedream-4            # the editor animates it with a slow pan
+    credits: 50                 # measured (nano-banana-2-flash: 75, auto: ~100)
+  persona_candidates: 2          # portraits generated per character (50 credits each); was 4
+  character_limits: {persona_images: 1, persona_clips: 0}   # per UGC video: ONE paid portrait scene, no animated clips
+  inr_per_credit: 0.083         # ≈ $20 / 20,000 credits × 88 ₹/$ (for the ledger)
+
+review:
+  single_pass: true             # one combined Gemini review per version (text+visual+audio+brand) instead of four
+  frames_per_scene: 2           # frames the visual/text reviewers look at per scene
+  min_caption_seconds: 0.35     # caption lines shorter than this flash too fast to read
+  max_silence_s: 0.9            # a gap in the voice longer than this inside the video is flagged
+  loudness_target_lufs: -14
+  loudness_tolerance: 2.5
+  duration_range_s: [18, 42]

@@ -1,0 +1,58 @@
+# Font pools per script. Every video draws its own pairing (seeded by the creative id, so a re-render looks the same):
+#   Latin font (English/Hinglish words, digits) + script font (Hindi/Tamil/Telugu/Bengali/Marathi text).
+# All fonts are in assets/fonts (scripts/get_fonts.py). `scale` corrects for how large a face looks at the same size;
+# `caps: true` means the face is designed for capitals (text is upper-cased for Latin only).
+# Glyph coverage was checked with fontTools: fonts here contain the script listed in their pool.
+latin:
+  - {family: "Poppins",       file: "Poppins-ExtraBold.ttf",     weight: 800, scale: 1.00}
+  - {family: "Poppins",       file: "Poppins-Bold.ttf",          weight: 700, scale: 1.00}
+  - {family: "Montserrat",    file: "Montserrat-Variable.ttf",   weight: 800, scale: 0.95}
+  - {family: "Anton",         file: "Anton-Regular.ttf",         weight: 400, scale: 1.20, caps: true}
+  - {family: "Bebas Neue",    file: "BebasNeue-Regular.ttf",     weight: 400, scale: 1.30, caps: true}
+  - {family: "Oswald",        file: "Oswald-Variable.ttf",       weight: 700, scale: 1.10}
+  - {family: "Lilita One",    file: "LilitaOne-Regular.ttf",     weight: 400, scale: 1.05}
+  - {family: "Archivo Black", file: "ArchivoBlack-Regular.ttf",  weight: 400, scale: 0.88}
+  - {family: "Rubik",         file: "Rubik-Variable.ttf",        weight: 800, scale: 0.98}
+  - {family: "Bangers",       file: "Bangers-Regular.ttf",       weight: 400, scale: 1.10, caps: true}
+  - {family: "Baloo 2",       file: "Baloo2-Variable.ttf",       weight: 800, scale: 1.00}
+devanagari:
+  - {family: "Baloo 2",       file: "Baloo2-Variable.ttf",       weight: 800, scale: 1.00}
+  - {family: "Teko",          file: "Teko-Variable.ttf",         weight: 700, scale: 1.25}
+  - {family: "Hind",          file: "Hind-Bold.ttf",             weight: 700, scale: 1.00}
+  - {family: "Mukta",         file: "Mukta-ExtraBold.ttf",       weight: 800, scale: 1.00}
+  - {family: "Kalam",         file: "Kalam-Bold.ttf",            weight: 700, scale: 1.05}
+  - {family: "Yatra One",     file: "YatraOne-Regular.ttf",      weight: 400, scale: 0.95}
+  - {family: "Khand",         file: "Khand-Bold.ttf",            weight: 700, scale: 1.15}
+  - {family: "Rajdhani",      file: "Rajdhani-Bold.ttf",         weight: 700, scale: 1.10}
+  - {family: "Rozha One",     file: "RozhaOne-Regular.ttf",      weight: 400, scale: 0.92}
+  - {family: "Sarpanch",      file: "Sarpanch-ExtraBold.ttf",    weight: 800, scale: 1.00}
+  - {family: "Poppins",       file: "Poppins-Bold.ttf",          weight: 700, scale: 0.95}
+tamil:
+  - {family: "Noto Sans Tamil", file: "NotoSansTamil-Bold.ttf",  weight: 700, scale: 1.00}
+  - {family: "Hind Madurai",  file: "HindMadurai-Bold.ttf",      weight: 700, scale: 1.00}
+  - {family: "Mukta Malar",   file: "MuktaMalar-ExtraBold.ttf",  weight: 800, scale: 1.00}
+  - {family: "Baloo Thambi 2", file: "BalooThambi2-Variable.ttf", weight: 800, scale: 1.00}
+  - {family: "Catamaran",     file: "Catamaran-Variable.ttf",    weight: 800, scale: 1.05}
+telugu:
+  - {family: "Noto Sans Telugu", file: "NotoSansTelugu-Bold.ttf", weight: 700, scale: 1.00}
+  - {family: "Hind Guntur",   file: "HindGuntur-Bold.ttf",       weight: 700, scale: 1.00}
+  - {family: "Baloo Tammudu 2", file: "BalooTammudu2-Variable.ttf", weight: 800, scale: 1.00}
+bengali:
+  - {family: "Noto Sans Bengali", file: "NotoSansBengali-Bold.ttf", weight: 700, scale: 1.00}
+  - {family: "Hind Siliguri", file: "HindSiliguri-Bold.ttf",     weight: 700, scale: 1.00}
+  - {family: "Baloo Da 2",    file: "BalooDa2-Variable.ttf",     weight: 800, scale: 1.00}
+
+# Overlay layouts: every video draws one of each (seeded, and no two videos of an app's generation share the same
+# combination — see captions.assign_styles). Modes filter what suits them.
+caption_layouts:
+  karaoke: "the line with the spoken word highlighted"
+  word: "one big word at a time, popping in"
+  boxed: "the line inside a solid box"
+  lowerbar: "a full-width bar at the bottom (news / talking style)"
+headline_styles: [sticker, banner, outline, underline, split]
+hook_styles: [card, underline, stacked]
+mode_layouts:
+  ai_character: {caption: [lowerbar, boxed, karaoke]}          # keep the face clear
+  character: {caption: [karaoke, boxed, word, lowerbar]}
+  images_vo: {caption: [boxed, karaoke, lowerbar]}             # big headlines carry the scene; captions stay calm
+  faceless: {caption: [karaoke, word, boxed, lowerbar]}

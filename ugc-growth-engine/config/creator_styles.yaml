@@ -1,0 +1,56 @@
+# Faceless creator styles. Caption colours are RGB hex (converted to ASS BGR in captions.py).
+bestie_narrator:
+  label: "Bestie narrator"
+  description: "casual young voice, fast cuts, big captions"
+  voice_gender: female
+  tts_rate: "+12%"
+  caption: {size: 96, primary: "FFFFFF", highlight: "00E5FF", outline: "000000", outline_px: 6, position: middle, words_per_line: 2}
+  anims: [pop, bounce, slide]   # animations this style draws from (per video)
+  modes: [faceless, images_vo, character, ai_character]   # visual modes this style can be shot in
+  cut_seconds: 2.0
+  music_energy: high
+  screenshot_ratio: 0.3
+explainer_didi_bhaiya:
+  label: "Explainer didi/bhaiya"
+  description: "calm, trustworthy voice, screenshots + zooms"
+  voice_gender: male
+  tts_rate: "+0%"
+  caption: {size: 78, primary: "FFFFFF", highlight: "4CD964", outline: "1A1A1A", outline_px: 5, position: lower, words_per_line: 3}
+  anims: [slide, fade, pop]   # animations this style draws from (per video)
+  modes: [faceless, images_vo, character, ai_character]   # visual modes this style can be shot in
+  cut_seconds: 4.0
+  music_energy: low
+  screenshot_ratio: 0.6
+meme_text:
+  label: "Meme text"
+  description: "text-on-screen meme style, punchy captions, minimal voice"
+  voice_gender: male
+  tts_rate: "+15%"
+  caption: {size: 104, primary: "FFFFFF", highlight: "00FFFF", outline: "000000", outline_px: 8, position: upper, words_per_line: 2}
+  anims: [bounce, pop, pill]   # animations this style draws from (per video)
+  modes: [faceless, images_vo, character]   # visual modes this style can be shot in
+  cut_seconds: 1.8
+  music_energy: high
+  screenshot_ratio: 0.2
+screen_demo:
+  label: "Screen demo"
+  description: "app screenshots front and centre, step-by-step"
+  voice_gender: female
+  tts_rate: "+5%"
+  caption: {size: 80, primary: "FFFFFF", highlight: "FFB300", outline: "000000", outline_px: 5, position: lower, words_per_line: 3}
+  anims: [pill, slide, fade]   # animations this style draws from (per video)
+  modes: [faceless, images_vo, ai_character]   # visual modes this style can be shot in
+  cut_seconds: 3.5
+  music_energy: medium
+  screenshot_ratio: 0.8
+storytime:
+  label: "Storytime"
+  description: "slower narrative, relatable scenario b-roll"
+  voice_gender: female
+  tts_rate: "-5%"
+  caption: {size: 84, primary: "FFFFFF", highlight: "FF7AB6", outline: "000000", outline_px: 5, position: lower, words_per_line: 3}
+  anims: [fade, slide, pop]   # animations this style draws from (per video)
+  modes: [character, images_vo, ai_character, faceless]   # visual modes this style can be shot in
+  cut_seconds: 4.5
+  music_energy: low
+  screenshot_ratio: 0.25

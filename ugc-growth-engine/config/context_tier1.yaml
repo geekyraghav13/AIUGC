@@ -1,0 +1,27 @@
+# Month -> commercial / seasonal moments for US/UK/CA/AU small-business and household-money audiences.
+months:
+  1: [new-year budgeting resolutions, tax-season prep, post-holiday slump for retail, dry January side hustles]
+  2: [tax refund season, Valentine's Day sales, Super Bowl food-truck rush, Presidents Day sales]
+  3: [spring cleaning, quarter-end bookkeeping, St Patrick's Day pub trade, farmers markets reopen]
+  4: [tax deadline (US), Easter trading, financial year-end (UK/AU/CA prep), spring farmers markets]
+  5: [Mother's Day sales, Memorial Day weekend markets, wedding season starts, garage-sale season]
+  6: [Father's Day, summer markets and food trucks, graduation parties, mid-year book-keeping]
+  7: [summer market season, Fourth of July / Canada Day stalls, mid-year budget review, holiday travel cash]
+  8: [back-to-school spending, county fairs, end-of-summer market rush, side-hustle weekends]
+  9: [Labor Day sales, autumn farmers markets, quarter-end bookkeeping, football-season tailgate stands]
+  10: [Halloween stalls, pumpkin patches, holiday-season prep, Q4 planning, craft fairs]
+  11: [Black Friday, Thanksgiving, small-business Saturday, holiday market stalls open]
+  12: [Christmas markets, year-end bookkeeping, holiday tips and cash gifts, new-year budget planning]
+everyday_scenarios:
+  - counting the till at closing time in a small shop
+  - food truck after the lunch rush
+  - weekend farmers market or flea market stall
+  - barber or salon chair-rental cash at end of shift
+  - mechanic or tradesperson paid in cash for a job
+  - freelancer taking cash deposits for gigs
+  - splitting household cash between joint and personal accounts
+  - envelope-budgeting groceries with cash at the kitchen table
+  - garage-sale takings on a Saturday afternoon
+  - checking a cash float before opening a stall
+  - babysitter or tutor paid in cash and keeping a record
+  - tip jar at a coffee shop at the end of the day

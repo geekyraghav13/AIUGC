@@ -1,0 +1,49 @@
+{
+  "app_id": "clockvibe",
+  "app_name": "Digital Clock - Huge LED Clock",
+  "category": "Productivity / Utilities",
+  "one_liner": "Turn your phone or tablet into a huge, bright digital clock you can read from across the room.",
+  "description": "Digital Clock - Huge LED Clock is a big, full-screen digital clock for the nightstand, desk, kitchen or office. Users pick colour, font and brightness, switch between digital and analog styles, use a dim night mode for the bedside, add a home-screen clock widget, and use the built-in big timer, countdown timer and stopwatch. Date, weather and battery can sit on the clock screen, and burn-in protection is included.",
+  "key_features": [
+    "Huge full-screen digital clock readable from far away",
+    "Bright LED clock styles with colour, font and brightness control",
+    "Dim night mode for a glare-free bedside clock",
+    "Analog and digital clock styles",
+    "Home-screen clock widget",
+    "Big timer, countdown timer and stopwatch",
+    "Date, weather and battery on the clock screen",
+    "Burn-in protection"
+  ],
+  "usp": "Turns any phone or tablet, even an old one, into a big bedside or desk clock that is easy to read at a glance.",
+  "target_audience": "Adults in the US, UK, Canada and Australia who want an easy-to-read bedside, desk or kitchen clock, people with an old phone or tablet lying around, and anyone who wants a night clock that is not glaring",
+  "city_tiers": [
+    "1"
+  ],
+  "languages": [
+    "en"
+  ],
+  "brand_tone": "fun",
+  "cta": "Download free on Google Play",
+  "play_store_id": "com.clockvibe.app",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.clockvibe.app&hl=en_IN",
+  "claims_to_avoid": [
+    "improves sleep",
+    "cures insomnia",
+    "best clock app",
+    "saves battery",
+    "medical or health claims",
+    "guaranteed results",
+    "comparison with named competitors"
+  ],
+  "research_focus": [
+    "how people use a big digital clock on a phone or tablet as a bedside night clock, desk clock or kitchen clock",
+    "reusing an old phone or tablet as a bedside clock, smart display or always-on clock",
+    "frustrations with bright, glaring phone screens and small hard-to-read clocks at night, and dim night mode setups",
+    "customising a clock screen: colours, fonts, widgets, burn-in protection and full-screen clock apps",
+    "timers, stopwatch and countdown on a clock display for study, workouts, cooking and focus"
+  ],
+  "mode_mix": {
+    "faceless": 10
+  },
+  "languages_strict": true
+}

@@ -1,0 +1,39 @@
+{
+  "app_id": "motorins_in",
+  "app_name": "Motor Insurance Calculator",
+  "category": "Insurance / Finance tools",
+  "one_liner": "See your car or bike insurance premium instantly and understand what changes the price before you renew.",
+  "description": "Motor insurance calculator app (India). Users pick a vehicle type (car, bike/scooter, commercial vehicle), model, year and city, and instantly see an estimated premium for third-party and comprehensive cover. It shows how IDV, NCB (no-claim bonus) and add-ons like zero depreciation and engine protection change the price, so users can compare before renewing or buying.",
+  "key_features": [
+    "Instant premium estimate for car, bike/scooter and commercial vehicles",
+    "Third-party vs comprehensive cover comparison",
+    "Shows how IDV and NCB (no-claim bonus) change the premium",
+    "Add-ons explained: zero depreciation, engine protection and more",
+    "Compare before renewing or buying"
+  ],
+  "usp": "Understand and estimate your motor insurance premium yourself, before an agent or website quotes you.",
+  "target_audience": "Car and two-wheeler owners in India renewing or buying insurance, first-time vehicle buyers, and commercial vehicle owners",
+  "city_tiers": [
+    "1",
+    "2",
+    "3"
+  ],
+  "languages": [
+    "hi"
+  ],
+  "brand_tone": "trustworthy",
+  "cta": "Play Store से मुफ़्त डाउनलोड करें",
+  "play_store_id": "com.insurance.calculator.motor",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.insurance.calculator.motor",
+  "claims_to_avoid": [
+    "cheapest premium guaranteed",
+    "exact premium quotes",
+    "claim approval",
+    "specific rupee savings",
+    "comparison with named insurers"
+  ],
+  "languages_strict": true,
+  "mode_mix": {
+    "faceless": 10
+  }
+}

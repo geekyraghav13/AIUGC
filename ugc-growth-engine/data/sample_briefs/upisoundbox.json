@@ -1,0 +1,41 @@
+{
+  "app_id": "upisoundbox",
+  "app_name": "UPI Soundbox",
+  "category": "Business / Payments tools",
+  "one_liner": "Turn your phone into a UPI soundbox: hear every payment announced the moment it arrives, with no hardware or monthly rent.",
+  "description": "UPI Soundbox reads your payment notifications/SMS and announces every credited UPI payment out loud in a clear voice, so shopkeepers stop checking the phone screen. Works with Google Pay, PhonePe, Paytm, BHIM and bank UPI apps as long as you get a payment alert. Choose language, volume and repeat announcement, silent hours, and a custom alert sound. See payment history with date filter and a daily collection summary, and export records. Lightweight and battery friendly for budget phones. It does not access your bank account or store your UPI PIN; it only reads transaction notifications. Set up: install, grant notification/SMS permission, keep the app running in background.",
+  "key_features": [
+    "Announces the amount of every credited UPI payment out loud",
+    "Works with Google Pay, PhonePe, Paytm, BHIM and bank UPI apps",
+    "No extra hardware, no monthly rental, no installation charge",
+    "Language, volume, repeat announcement and silent hours",
+    "Payment history with date filter and daily collection summary",
+    "Lightweight and battery friendly on budget phones"
+  ],
+  "usp": "Your existing smartphone becomes the soundbox: hear the payment, skip the fake-screenshot arguments, pay no rent.",
+  "target_audience": "Kirana store owners, vegetable and fruit vendors, tea stalls, medical stores, salons, small cafes, delivery partners and auto drivers who accept UPI, in tier-1 to tier-3 cities",
+  "city_tiers": [
+    "1",
+    "2",
+    "3"
+  ],
+  "languages": [
+    "en"
+  ],
+  "brand_tone": "desi-casual",
+  "cta": "Download free on Play Store",
+  "play_store_id": "com.upisoundboxspeaker.app",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.upisoundboxspeaker.app&hl=en_IN&gl=IN",
+  "claims_to_avoid": [
+    "stops all fraud",
+    "100% fraud-proof",
+    "guaranteed accurate",
+    "official bank or NPCI product",
+    "number of users or downloads",
+    "no KYC",
+    "works without internet",
+    "naming or insulting a competitor brand or their soundbox",
+    "earnings or sales figures as promises"
+  ],
+  "languages_strict": true
+}

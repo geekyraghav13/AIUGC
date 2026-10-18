@@ -1,0 +1,35 @@
+# Core
+python-dotenv>=1.0
+pyyaml>=6.0
+pydantic>=2.6
+sqlmodel>=0.0.16
+rich>=13.7
+typer>=0.12
+requests>=2.31
+tenacity>=8.2
+
+# LLM providers (free tiers / local)
+google-genai>=1.0
+groq>=0.9
+
+# Data enrichment
+google-play-scraper>=1.2
+
+# Voice
+edge-tts>=6.1.12
+gTTS>=2.5
+faster-whisper>=1.0      # word timings for imported (Magnific) voice lines and the gTTS fallback
+
+# Stats + dashboard
+numpy>=1.26
+scipy>=1.12
+pandas>=2.2
+streamlit>=1.35
+plotly>=5.20
+Pillow>=10.3
+
+# Tests
+pytest>=8.0
+
+# Optional (install manually if you want them):
+# pytrends>=4.9           # D8 Google Trends signal (unofficial; research runs fine without it)

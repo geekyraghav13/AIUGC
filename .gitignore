@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+cache/
+outputs/
+engine.db*
+data/apps/
+remotion/public/
+remotion/out/
+*.mp4
+*.mp3

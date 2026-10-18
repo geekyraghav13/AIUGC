@@ -1,0 +1,33 @@
+# Tag values used for insights and optimization. Every Creative is tagged on each dimension.
+hook_types:
+  question: "Opens with a direct question to the viewer"
+  bold_claim: "Opens with a confident (but truthful, brief-backed) statement"
+  relatable_pain: "Names a painful everyday moment the viewer recognises"
+  curiosity_gap: "Teases something without revealing it"
+  number_list: "Opens with a number (3 reasons, 2 mistakes)"
+  desi_humor: "Desi humour / exaggeration / meme reference"
+  trend_moment: "Ties to a current Indian moment (festival, IPL, exams, salary day)"
+cta_types: [download, try_free, link_in_bio, share]
+length_buckets:
+  short: [0, 24]
+  medium: [24, 32]
+  long: [32, 999]
+dimensions: [language, hook_type, format, creator_style, persona, message, cta_type, length_bucket, visual_mode]
+
+# How a video is shot. Research decides the mix (market production styles below), the growth loop learns the winner.
+visual_modes:
+  faceless: "stock footage, app screens and motion graphics under a narrator voice"
+  images_vo: "a sequence of stills (stock photos or AI images) with bold per-scene headlines and a narrator voice"
+  character: "the same recurring AI persona acts in the scenes (photos + short clips) while a narrator speaks"
+  ai_character: "the recurring AI persona talks to camera (lip-synced) for the hook and the CTA; the middle as character"
+# market analysis `production_style` → our visual mode
+market_to_visual_mode:
+  talking_head: ai_character
+  in_car: ai_character
+  green_screen: ai_character
+  skit: character
+  image_slideshow: images_vo
+  text_broll: faceless
+  animation: faceless
+  screen_demo: faceless
+  other: faceless

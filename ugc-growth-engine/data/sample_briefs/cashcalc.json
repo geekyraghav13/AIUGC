@@ -1,0 +1,36 @@
+{
+  "app_id": "cashcalc",
+  "app_name": "Cash Calculator",
+  "category": "Business / Finance tools",
+  "one_liner": "Count cash by note denomination in seconds and get the exact total — no mistakes, no recounting.",
+  "description": "Cash Calculator lets shopkeepers, traders and families count cash quickly: enter how many notes of ₹500, ₹200, ₹100, ₹50, ₹20, ₹10 and coins you have and it instantly shows the total, also written in words (English and Hindi). Save each count with a note (e.g. 'evening galla', 'shaadi shagun'), see history, and share the breakup on WhatsApp as a neat slip. Works offline.",
+  "key_features": [
+    "Denomination-wise note counting with instant total",
+    "Total written in words in English and Hindi",
+    "Save counts with a label and view history",
+    "Share the cash breakup on WhatsApp as a slip",
+    "Works fully offline"
+  ],
+  "usp": "The fastest way to count a pile of mixed notes correctly, built for Indian denominations.",
+  "target_audience": "Kirana shop owners, small traders, petrol pump and delivery cash handlers, and families counting wedding or festival cash, in tier-1 to tier-3 cities",
+  "city_tiers": [
+    "1",
+    "2",
+    "3"
+  ],
+  "languages": [
+    "en"
+  ],
+  "brand_tone": "desi-casual",
+  "cta": "Download free on Play Store",
+  "play_store_id": "com.appfactory.cashcalculator",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.appfactory.cashcalculator",
+  "claims_to_avoid": [
+    "detects fake notes",
+    "bank-grade security",
+    "guaranteed accuracy",
+    "tax filing",
+    "specific time saved"
+  ],
+  "languages_strict": true
+}

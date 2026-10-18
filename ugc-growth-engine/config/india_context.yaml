@@ -1,0 +1,31 @@
+# Month -> cultural/commercial moments. Dates shift yearly; these are the usual months.
+months:
+  1: [Makar Sankranti / Pongal / Lohri, Republic Day sales, board exam prep, new-year resolutions, winter wedding season]
+  2: [board exams, Valentine's week, Union Budget talk, JEE Main, wedding season]
+  3: [Holi, board exams, financial year-end tax saving, IPL build-up, appraisal season]
+  4: [IPL season, new financial year, Ugadi / Gudi Padwa, Baisakhi, Tamil New Year, Poila Baisakh, summer vacation]
+  5: [IPL playoffs, NEET, summer heat, results season, Eid (varies), college admissions]
+  6: [monsoon arrives, college admissions, new academic year, Father's Day, placement prep]
+  7: [monsoon, Guru Purnima, mid-year sales, new semester, Muharram (varies)]
+  8: [Independence Day sales, Raksha Bandhan, Janmashtami, Onam, monsoon traffic]
+  9: [Ganesh Chaturthi, Onam, festive sale build-up, placement season, Navratri prep]
+  10: [Navratri, Durga Puja, Dussehra, festive sales (Big Billion / Great Indian), Karva Chauth, Diwali shopping]
+  11: [Diwali, Bhai Dooj, Chhath Puja, wedding season starts, Children's Day, cricket World Cup (some years)]
+  12: [Christmas, year-end sales, wedding season, new-year plans, winter holidays]
+everyday_scenarios:
+  - chai break with colleagues
+  - Mumbai local / Delhi metro commute
+  - PG / hostel life and roommate expenses
+  - family WhatsApp group forwards
+  - month-end budget before salary day
+  - salary day (1st of the month) treat
+  - UPI payment at the kirana store
+  - splitting the bill after a Zomato/Swiggy order
+  - tier-2 city aspirations and moving to a metro
+  - exam night studying with Maggi
+  - auto-rickshaw haggling
+  - parents asking "beta, what is this app?"
+  - wedding shaadi season expenses
+  - cricket match with friends on the weekend
+  - load-shedding / power cut in summer
+  - coaching centre (Kota, Ameerpet) routine
